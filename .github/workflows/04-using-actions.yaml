@@ -1,0 +1,24 @@
+name: 04 - Using Actions
+
+on: push
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout Code
+              uses: actions/checkout@v4
+            - name: Printing Folders
+              run: ls
+            # - name: Setup Node
+            #   uses: actions/setup-node@v4
+            #   with: 
+            #     node-version: '22.x'
+            # - name:  Install Dependencies
+              
+    # 0 checkop the code from the repository        
+    # 1. Install deps of our react app
+    # 2. Excute automated tests
+    # npx create-react-app --template typescript react-app //npx instala local
+    # cd react-app y npm run start, me salgo con ctr+c
+                
